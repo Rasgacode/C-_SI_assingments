@@ -6,10 +6,13 @@ namespace Person
     {
         static void Main(string[] args)
         {
-            Person person = new Person();
-            person.Name = "nORBI";
-            person.BirthDate = new DateTime(1993, 6, 21);
-            Console.WriteLine(person); 
+            Employee employee = new Employee(new Room(12));
+            employee.Name = "nORBI";
+            employee.BirthDate = new DateTime(1993, 6, 21);
+            employee.Profession = "Made";
+            employee.Salary = 10000;
+
+            Console.WriteLine(employee); 
         }
     }
 }

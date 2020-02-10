@@ -9,3 +9,14 @@ D:\CC_C#_branch\SI1\Person\Person\obj\Debug\netcoreapp3.1\Person.AssemblyInfoInp
 D:\CC_C#_branch\SI1\Person\Person\obj\Debug\netcoreapp3.1\Person.AssemblyInfo.cs
 D:\CC_C#_branch\SI1\Person\Person\obj\Debug\netcoreapp3.1\Person.dll
 D:\CC_C#_branch\SI1\Person\Person\obj\Debug\netcoreapp3.1\Person.pdb
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\Person\bin\Debug\netcoreapp3.1\Person.exe
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\Person\bin\Debug\netcoreapp3.1\Person.deps.json
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\Person\bin\Debug\netcoreapp3.1\Person.runtimeconfig.json
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\Person\bin\Debug\netcoreapp3.1\Person.runtimeconfig.dev.json
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\Person\bin\Debug\netcoreapp3.1\Person.dll
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\Person\bin\Debug\netcoreapp3.1\Person.pdb
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\Person\obj\Debug\netcoreapp3.1\Person.csprojAssemblyReference.cache
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\Person\obj\Debug\netcoreapp3.1\Person.AssemblyInfoInputs.cache
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\Person\obj\Debug\netcoreapp3.1\Person.AssemblyInfo.cs
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\Person\obj\Debug\netcoreapp3.1\Person.dll
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\Person\obj\Debug\netcoreapp3.1\Person.pdb

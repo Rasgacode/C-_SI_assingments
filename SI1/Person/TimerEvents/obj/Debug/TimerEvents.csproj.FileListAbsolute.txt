@@ -1,0 +1,14 @@
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\TimerEvents\bin\Debug\TimerEvents.exe.config
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\TimerEvents\bin\Debug\TimerEvents.exe
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\TimerEvents\bin\Debug\TimerEvents.pdb
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\TimerEvents\obj\Debug\TimerEvents.csprojAssemblyReference.cache
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\TimerEvents\obj\Debug\MainWindow.g.cs
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\TimerEvents\obj\Debug\App.g.cs
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\TimerEvents\obj\Debug\TimerEvents_MarkupCompile.cache
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\TimerEvents\obj\Debug\TimerEvents_MarkupCompile.lref
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\TimerEvents\obj\Debug\MainWindow.baml
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\TimerEvents\obj\Debug\TimerEvents.g.resources
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\TimerEvents\obj\Debug\TimerEvents.Properties.Resources.resources
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\TimerEvents\obj\Debug\TimerEvents.csproj.GenerateResource.cache
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\TimerEvents\obj\Debug\TimerEvents.exe
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\TimerEvents\obj\Debug\TimerEvents.pdb

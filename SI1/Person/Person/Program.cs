@@ -12,7 +12,10 @@ namespace Person
             employee.Profession = "Made";
             employee.Salary = 10000;
 
-            Console.WriteLine(employee); 
+            Employee employee1 = (Employee)employee.Clone();
+
+            Console.WriteLine(employee);
+            Console.WriteLine(employee1);
         }
     }
 }

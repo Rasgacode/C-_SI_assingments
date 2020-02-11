@@ -1,5 +1,4 @@
-﻿using Person;
-using System;
+﻿using System;
 
 namespace SortString
 {

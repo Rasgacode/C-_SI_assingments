@@ -1,0 +1,15 @@
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\SortString\bin\Debug\netcoreapp3.1\Person.exe
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\SortString\bin\Debug\netcoreapp3.1\SortString.exe
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\SortString\bin\Debug\netcoreapp3.1\SortString.deps.json
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\SortString\bin\Debug\netcoreapp3.1\SortString.runtimeconfig.json
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\SortString\bin\Debug\netcoreapp3.1\SortString.runtimeconfig.dev.json
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\SortString\bin\Debug\netcoreapp3.1\SortString.dll
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\SortString\bin\Debug\netcoreapp3.1\SortString.pdb
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\SortString\bin\Debug\netcoreapp3.1\Person.dll
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\SortString\bin\Debug\netcoreapp3.1\Person.pdb
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\SortString\obj\Debug\netcoreapp3.1\SortString.csprojAssemblyReference.cache
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\SortString\obj\Debug\netcoreapp3.1\SortString.AssemblyInfoInputs.cache
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\SortString\obj\Debug\netcoreapp3.1\SortString.AssemblyInfo.cs
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\SortString\obj\Debug\netcoreapp3.1\SortString.csproj.CopyComplete
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\SortString\obj\Debug\netcoreapp3.1\SortString.dll
+D:\CC_C#_branch\C-_SI_assingments\SI1\Person\SortString\obj\Debug\netcoreapp3.1\SortString.pdb

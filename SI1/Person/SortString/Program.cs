@@ -11,6 +11,7 @@ namespace SortString
             Array.Sort(words);
             str = string.Join(" ", words);
             Console.WriteLine(str);
+            Console.WriteLine("kuki");
         }
     }
 }

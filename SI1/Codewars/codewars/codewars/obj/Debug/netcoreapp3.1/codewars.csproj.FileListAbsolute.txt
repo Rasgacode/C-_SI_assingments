@@ -1,0 +1,11 @@
+D:\CC_C#_branch\C-_SI_assingments\SI1\Codewars\codewars\codewars\bin\Debug\netcoreapp3.1\codewars.exe
+D:\CC_C#_branch\C-_SI_assingments\SI1\Codewars\codewars\codewars\bin\Debug\netcoreapp3.1\codewars.deps.json
+D:\CC_C#_branch\C-_SI_assingments\SI1\Codewars\codewars\codewars\bin\Debug\netcoreapp3.1\codewars.runtimeconfig.json
+D:\CC_C#_branch\C-_SI_assingments\SI1\Codewars\codewars\codewars\bin\Debug\netcoreapp3.1\codewars.runtimeconfig.dev.json
+D:\CC_C#_branch\C-_SI_assingments\SI1\Codewars\codewars\codewars\bin\Debug\netcoreapp3.1\codewars.dll
+D:\CC_C#_branch\C-_SI_assingments\SI1\Codewars\codewars\codewars\bin\Debug\netcoreapp3.1\codewars.pdb
+D:\CC_C#_branch\C-_SI_assingments\SI1\Codewars\codewars\codewars\obj\Debug\netcoreapp3.1\codewars.csprojAssemblyReference.cache
+D:\CC_C#_branch\C-_SI_assingments\SI1\Codewars\codewars\codewars\obj\Debug\netcoreapp3.1\codewars.AssemblyInfoInputs.cache
+D:\CC_C#_branch\C-_SI_assingments\SI1\Codewars\codewars\codewars\obj\Debug\netcoreapp3.1\codewars.AssemblyInfo.cs
+D:\CC_C#_branch\C-_SI_assingments\SI1\Codewars\codewars\codewars\obj\Debug\netcoreapp3.1\codewars.dll
+D:\CC_C#_branch\C-_SI_assingments\SI1\Codewars\codewars\codewars\obj\Debug\netcoreapp3.1\codewars.pdb

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CC_C#_branch\\C-_SI_assingments\\SI1\\Person\\SortString\\SortString.csproj",
-      "projectName": "SortString",
-      "projectPath": "D:\\CC_C#_branch\\C-_SI_assingments\\SI1\\Person\\SortString\\SortString.csproj",
+      "projectUniqueName": "D:\\CC_C#_branch\\C-_SI_assingments\\SI1\\Codewars\\codewars\\codewars\\codewars.csproj",
+      "projectName": "codewars",
+      "projectPath": "D:\\CC_C#_branch\\C-_SI_assingments\\SI1\\Codewars\\codewars\\codewars\\codewars.csproj",
       "packagesPath": "C:\\Users\\rongy\\.nuget\\packages\\",
-      "outputPath": "D:\\CC_C#_branch\\C-_SI_assingments\\SI1\\Person\\SortString\\obj\\",
+      "outputPath": "D:\\CC_C#_branch\\C-_SI_assingments\\SI1\\Codewars\\codewars\\codewars\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rongy\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -6,7 +6,7 @@ namespace Person
 {
     class Person
     {
-        public string Name { get; set; }
+        public string Name { get; }
         public DateTime BirthDate { get; set; }
     }
 }

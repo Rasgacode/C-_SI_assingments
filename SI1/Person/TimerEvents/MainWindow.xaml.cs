@@ -45,5 +45,15 @@ namespace TimerEvents
             _timer.Tick += new EventHandler(DispatcherTimer_Tick);
             _timer.Start();
         }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Window_Closed_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

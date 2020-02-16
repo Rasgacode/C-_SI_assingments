@@ -43,6 +43,40 @@ namespace codewars
             return s.Split(' ').OrderBy(a => a.Select(b => b - 96).Sum()).Last();
         }
 
+        public static bool comp(int[] a, int[] b)
+        {
+            if (a == null || b == null) return false;
+            var result = a.Select(x => x * x).OrderBy(x => x).SequenceEqual(b.OrderBy(x => x));
+            return result;
+        }
+
+        public static int CountDeafRats(string town)
+        {
+            var targetDivider = town.Split("P");
+            foreach (var item in targetDivider)
+            {
+                Console.WriteLine(item);
+            }
+            return 0;
+        }
+
+        public static int find_it(int[] seq)
+        {
+            return seq.GroupBy(x => x).Single(y => y.Count() % 2 != 0).Key;
+            /* return seq.GroupBy(x => x)
+                .Where(y => y.Count() % 2 != 0)
+                .Select(a => a.Key)
+                .ToArray()[0]; */
+        }
+
+        public static bool IsPangram(string str)
+        {
+            return str.ToLower()
+                .GroupBy(x => x)
+                .Select(x => x.Key > 96 && x.Key < 123)
+                .Count() == 26;
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine(BreakChocolate(0, 0));
@@ -65,6 +99,13 @@ namespace codewars
             Console.WriteLine(GetVowelCount("The longest sentence in English is also awesome."));
 
             Console.WriteLine(High("The longest sentence in English is also awesome."));
+
+            Console.WriteLine(comp(new int[] { 121, 144, 19, 161, 19, 144, 19, 11 },
+                new int[] { 121, 14641, 20736, 361, 25921, 361, 20736, 361 }));
+
+            Console.WriteLine(find_it(new[] { 20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5 }));
+
+            Console.WriteLine(IsPangram("The quick brown fox jumps over the lazy dog."));
         }
     }
 }

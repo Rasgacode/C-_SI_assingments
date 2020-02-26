@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "regular_expression", "regular_expression\regular_expression.csproj", "{3E67B4E3-A4DC-4E41-8D4A-A6FBE5D86136}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Converter", "Converter\Converter.csproj", "{EEE8506B-2936-4F29-8D57-321855A271B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3E67B4E3-A4DC-4E41-8D4A-A6FBE5D86136}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E67B4E3-A4DC-4E41-8D4A-A6FBE5D86136}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E67B4E3-A4DC-4E41-8D4A-A6FBE5D86136}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEE8506B-2936-4F29-8D57-321855A271B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEE8506B-2936-4F29-8D57-321855A271B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEE8506B-2936-4F29-8D57-321855A271B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEE8506B-2936-4F29-8D57-321855A271B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

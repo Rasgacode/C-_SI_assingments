@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:regular_expression"
         mc:Ignorable="d"
-        Title="MainWindow" Height="459.412" Width="821.176">
+        Title="MainWindow" Height="459.412" Width="821.176"
+        KeyDown="MainWindow_KeyDown">
     <Grid>
         <Label Content="Name:" FontSize="30" Width="120" Height="54" Margin="46,16,627.333,350.667"></Label>
         <Label Content="Phone:" FontSize="30" Width="120" Height="54" Margin="46,135,627.333,231.667"></Label>
@@ -13,7 +14,6 @@
         <TextBox x:Name="PhoneTextbox" VerticalContentAlignment="Center" Margin="180,135,95.333,231.667"></TextBox>
         <TextBox x:Name="EmailTextbox" VerticalContentAlignment="Center" Margin="180,256,95.333,110.667"></TextBox>
         <TextBox x:Name="NameTextbox" VerticalContentAlignment="Center" Margin="180,16,95.333,350.667"></TextBox>
-        <Button x:Name="SaveBtn" Content="Save" FontSize="30" Margin="594,352,31.333,24.667" Click="SaveBtn_Click"
-                KeyDown="SaveBtn_KeyDown"></Button>
+        <Button x:Name="SaveBtn" Content="Save" FontSize="30" Margin="594,352,31.333,24.667" Click="SaveBtn_Click"></Button>
     </Grid>
 </Window>

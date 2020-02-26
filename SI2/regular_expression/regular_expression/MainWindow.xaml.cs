@@ -30,6 +30,14 @@ namespace regular_expression
             ValidData();
         }
 
+        private void MainWindow_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Return)
+            {
+                ValidData();
+            }
+        }
+
         private bool ValidData()
         {
             if (!ValidName(NameTextbox))
@@ -50,10 +58,6 @@ namespace regular_expression
             return true;
         }
 
-        private void SaveBtn_KeyDown(object sender, KeyEventArgs e)
-        {
-
-        }
 
         private bool ValidName(TextBox name)
         {

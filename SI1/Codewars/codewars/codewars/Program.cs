@@ -69,12 +69,23 @@ namespace codewars
                 .ToArray()[0]; */
         }
 
+        public static Person find_name(List<Person> codecoolers)
+        {
+            return codecoolers.Single(codecooler => codecooler.Name.Equals("Avril"));
+        }
+
         public static bool IsPangram(string str)
         {
             return str.ToLower()
                 .GroupBy(x => x)
                 .Select(x => x.Key > 96 && x.Key < 123)
                 .Count() == 26;
+        }
+
+        public static int MaxSequence(int[] arr)
+        {
+            
+            return 0;
         }
 
         static void Main(string[] args)
@@ -106,6 +117,8 @@ namespace codewars
             Console.WriteLine(find_it(new[] { 20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5 }));
 
             Console.WriteLine(IsPangram("The quick brown fox jumps over the lazy dog."));
+
+            Console.WriteLine(find_name(new List<Person>(){ new Person("lol", 12), new Person("Avril", 26)}).Name);
         }
     }
 }

@@ -88,6 +88,70 @@ namespace codewars
             return 0;
         }
 
+        public static string Rgb(int r, int g, int b)
+        {
+            int[] rgb = { r, g, b };
+            List<string> resultList = new List<string>();
+            foreach (int colorNumber in rgb)
+            {
+                if (colorNumber > 255) 
+                {
+                    resultList.Add(15.ToString());
+                    resultList.Add(15.ToString());
+                }
+                else if (colorNumber < 0)
+                {
+                    resultList.Add(0.ToString());
+                    resultList.Add(0.ToString());
+                }
+                else
+                {
+                    resultList.Add((colorNumber / 16).ToString());
+
+                    double numberAfterDivide = Convert.ToDouble(colorNumber) / 16;
+                    string numberDecimals;
+                    try
+                    {
+                        numberDecimals = numberAfterDivide.ToString().Split(".")[1];
+                    }
+                    catch (IndexOutOfRangeException)
+                    {
+                        numberDecimals = 0.ToString();
+                    }
+                    int numberToAdd = (int)Math.Round(Convert.ToDouble("0." + numberDecimals) * 16);
+                    resultList.Add(numberToAdd.ToString());
+                }
+            }
+
+            for (int i = 0; i < resultList.Count; i++)
+            {
+                switch (resultList[i])
+                {
+                    case "10":
+                        resultList[i] = "A";
+                        break;
+                    case "11":
+                        resultList[i] = "B";
+                        break;
+                    case "12":
+                        resultList[i] = "C";
+                        break;
+                    case "13":
+                        resultList[i] = "D";
+                        break;
+                    case "14":
+                        resultList[i] = "E";
+                        break;
+                    case "15":
+                        resultList[i] = "F";
+                        break;
+                    default:
+                        break;
+                }
+            }
+            return string.Join("", resultList);
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine(BreakChocolate(0, 0));
@@ -119,6 +183,8 @@ namespace codewars
             Console.WriteLine(IsPangram("The quick brown fox jumps over the lazy dog."));
 
             Console.WriteLine(find_name(new List<Person>(){ new Person("lol", 12), new Person("Avril", 26)}).Name);
+
+            Console.WriteLine(Rgb(148, 0, 211));
         }
     }
 }

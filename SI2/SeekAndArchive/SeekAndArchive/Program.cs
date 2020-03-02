@@ -7,13 +7,15 @@ namespace SeekAndArchive
 {
     class Program
     {
+        public static string Timestamp { get; set; }
+
         public static string Filename { get; set; }
 
         static void Main(string[] args)
         {
             Run(args);
         }
-        
+
         [PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
         private static void Run(string[] args)
         {
@@ -27,7 +29,7 @@ namespace SeekAndArchive
                     | NotifyFilters.FileName
                     | NotifyFilters.DirectoryName;
 
-                watcher.Filter = Filename;
+                //watcher.Filter = "kutya.*";
 
                 watcher.EnableRaisingEvents = true;
 
@@ -43,19 +45,20 @@ namespace SeekAndArchive
 
         private static void OnChanged(object source, FileSystemEventArgs e)
         {
-            using (FileStream zipToOpen = new FileStream(@$"D:\directoryToWatch\lol.zip", FileMode.Open))
+            Timestamp = GetTimestamp(DateTime.Now);
+            using (FileStream zipToCreate = new FileStream(@$"D:\archivedFiles\{Timestamp}.zip", FileMode.Create))
             {
-                using (ZipArchive archive = new ZipArchive(zipToOpen, ZipArchiveMode.Update))
+                using (ZipArchive archive = new ZipArchive(zipToCreate, ZipArchiveMode.Create))
                 {
-                    ZipArchiveEntry readmeEntry = archive.CreateEntry($"{Filename.Substring(0, Filename.Length - 4)}.txt");
-                    using (StreamWriter writer = new StreamWriter(readmeEntry.Open()))
-                    {
-                        writer.WriteLine("Information about this package.");
-                        writer.WriteLine("========================");
-                    }
+                    ZipArchiveEntry newEntry = archive.CreateEntryFromFile(e.FullPath, e.Name);
+                    //newEntry.ExtractToFile();
                 }
             }
         }
-            
+
+        public static string GetTimestamp(DateTime value)
+        {
+            return value.ToString("yyyyMMddHHmmssffff");
+        }
     }
 }

@@ -152,6 +152,19 @@ namespace codewars
             return string.Join("", resultList);
         }
 
+        public static bool Alphanumeric(string str)
+        {
+            string alphanumeric = string.Join("", Enumerable.Range('A', 26).Select(x => (char)x)).ToLower() + "0123456789";
+            str = str.ToLower();
+            foreach (char c in str) if (!alphanumeric.Contains(c)) return false;
+            return str.Length > 0;
+        }
+
+        public static int Smallest(long n)
+        {
+            return n.ToString().Select(x => Convert.ToInt32(x.ToString())).Min();
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine(BreakChocolate(0, 0));
@@ -185,6 +198,10 @@ namespace codewars
             Console.WriteLine(find_name(new List<Person>(){ new Person("lol", 12), new Person("Avril", 26)}).Name);
 
             Console.WriteLine(Rgb(148, 0, 211));
+
+            Console.WriteLine(Alphanumeric("kuki"));
+
+            Console.WriteLine(Smallest(12324343));
         }
     }
 }

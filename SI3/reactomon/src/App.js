@@ -11,7 +11,7 @@ export default class App extends Component {
     pokemons: [],
     types: [],
     actualInfo: {},
-    actualUrl: ""
+    actualUrl: "impossibleroute"
   };
 
   componentDidMount() {
@@ -70,10 +70,10 @@ export default class App extends Component {
             />
             <Route
               exact
-              path={this.actualUrl}
+              path={this.state.actualUrl}
               render={props => (
                 <React.Fragment>
-                  <Info />
+                  <Info actual={this.state.actualInfo} />
                 </React.Fragment>
               )}
             />

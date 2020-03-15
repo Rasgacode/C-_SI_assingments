@@ -46,20 +46,3 @@ body {
     transform: rotate(360deg);
   }
 }
-
-.itemName:hover {
-  opacity: 0.5;
-}
-
-.itemLink:hover {
-  opacity: 0.5;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  opacity: 0.5;
-}

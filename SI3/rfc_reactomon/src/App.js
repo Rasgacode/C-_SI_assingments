@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import Items from "./components/Items";
 import Info from "./components/Info";
+import Sound from "./clickInfoSound.mp3";
 
 const App = props => {
   const [pokemons, setPokemons] = useState([]);
@@ -12,6 +13,7 @@ const App = props => {
   const [actualInfo, setActualInfo] = useState({});
   const [actualUrl, setActualUrl] = useState("impossibleRoute");
   const [actualName, setActualName] = useState("notAPokemonName");
+  const [sound] = useState(new Audio(Sound));
 
   useEffect(() => {
     Axios.get("https://pokeapi.co/api/v2/pokemon").then(({ data }) => {
@@ -48,11 +50,16 @@ const App = props => {
       return "type";
     });
   };
+
+  const playSound = () => {
+    sound.play();
+  };
+
   return (
     <Router>
       <div className="App">
         <div className="container">
-          <Navbar />
+          <Navbar onClick={playSound} />
           <Route
             exact
             path="/Pokemons"

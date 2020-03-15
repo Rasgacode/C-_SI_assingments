@@ -1,51 +1,31 @@
 import React from "react";
 import headerLogo from "../../headerLogo.png";
-import { Link } from "react-router-dom";
+import StyledLink from "../../elements/Link";
+import StyledHeader from "../../elements/Header";
+import StyledImg from "../../elements/Image";
+import StyledImgContainer from "../../elements/NavImgContainer";
 
 const Navbar = props => {
   return (
-    <header style={headerStyle}>
-      <div className="imgContainer" style={imageContainerStyle}>
-        <img src={headerLogo} alt="" style={imageStyle} />
-      </div>
+    <StyledHeader>
+      <StyledImgContainer>
+        <StyledImg src={headerLogo} alt="" />
+      </StyledImgContainer>
       <div className="linkContainer">
-        <Link style={linkStyle} to="/Pokemons">
+        <StyledLink
+          linkcolor="red"
+          linksize="32px"
+          to="/Pokemons"
+          onClick={props.onClick}
+        >
           Pokemons
-        </Link>{" "}
-        <Link style={linkStyle} to="/Types">
+        </StyledLink>{" "}
+        <StyledLink linkcolor="red" linksize="32px" to="/Types">
           Types
-        </Link>
+        </StyledLink>
       </div>
-    </header>
+    </StyledHeader>
   );
-};
-
-const linkStyle = {
-  fontSize: "32px",
-  color: "red",
-  textDecoration: "none",
-  fontFamily: "Pokemon",
-  WebkitTextStroke: "1px black",
-  textShadow:
-    "3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000"
-};
-
-const headerStyle = {
-  textAlign: "center",
-  padding: "10px",
-  marginBottom: "20px",
-  wordSpacing: "35px",
-  width: "60%",
-  display: "inline-block"
-};
-
-const imageStyle = {
-  height: "300px"
-};
-
-const imageContainerStyle = {
-  marginTop: "-50px",
-  height: "200px"
 };
 
 export default Navbar;

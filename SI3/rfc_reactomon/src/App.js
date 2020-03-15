@@ -11,9 +11,9 @@ const App = props => {
   const [types, setTypes] = useState([]);
   const [actualInfo, setActualInfo] = useState({});
   const [actualUrl, setActualUrl] = useState("impossibleRoute");
+  const [actualName, setActualName] = useState("notAPokemonName");
 
   useEffect(() => {
-    console.log("All fetch");
     Axios.get("https://pokeapi.co/api/v2/pokemon").then(({ data }) => {
       setPokemons(data.results);
     });
@@ -24,19 +24,30 @@ const App = props => {
   }, []);
 
   useEffect(() => {
-    console.log("oneFetch");
-    pokemons.map(pokemon => {
-      if (pokemon.name.toUpperCase() === actualUrl.toUpperCase()) {
-        Axios.get(pokemon.url).then(({ data }) => setActualInfo(data));
-      }
-      return true;
-    });
-  }, [actualUrl, pokemons]);
+    if (actualUrl !== "impossibleRoute") {
+      Axios.get(actualUrl).then(({ data }) => setActualInfo(data));
+    }
+  }, [actualUrl]);
 
   const pokemonInfoClick = name => {
-    setActualUrl(name);
+    setActualName(name);
+    pokemons.map(pokemon => {
+      if (pokemon.name.toUpperCase() === name.toUpperCase()) {
+        setActualUrl(pokemon.url);
+      }
+      return "pokemon";
+    });
   };
 
+  const typeInfoClick = name => {
+    setActualName(name);
+    types.map(type => {
+      if (type.name.toUpperCase() === name.toUpperCase()) {
+        setActualUrl(type.url);
+      }
+      return "type";
+    });
+  };
   return (
     <Router>
       <div className="App">
@@ -47,7 +58,11 @@ const App = props => {
             path="/Pokemons"
             render={props => (
               <React.Fragment>
-                <Items items={pokemons} onClick={pokemonInfoClick} />
+                <Items
+                  items={pokemons}
+                  onClick={pokemonInfoClick}
+                  mark="pokemon"
+                />
               </React.Fragment>
             )}
           />
@@ -56,13 +71,13 @@ const App = props => {
             path="/Types"
             render={props => (
               <React.Fragment>
-                <Items items={types} onClick={pokemonInfoClick} />
+                <Items items={types} onClick={typeInfoClick} mark="type" />
               </React.Fragment>
             )}
           />
           <Route
             exact
-            path={`/${actualUrl}`}
+            path={`/${actualName}`}
             render={props => (
               <React.Fragment>
                 <Info actual={actualInfo} />

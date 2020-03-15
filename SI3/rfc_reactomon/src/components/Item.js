@@ -5,6 +5,8 @@ const Item = props => {
   props.item.name =
     props.item.name.charAt(0).toUpperCase() + props.item.name.slice(1);
   const { name } = props.item;
+  const mark = props.mark;
+
   return (
     <div className="itemContainer" style={itemContainerStyle}>
       <div className="itemName" style={boxStyle}>
